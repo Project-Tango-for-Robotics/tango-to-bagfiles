@@ -132,11 +132,6 @@ ${catkin_LIBRARIES}
 ${PCL_LIBRARIES}
 )
 
-target_link_libraries(parse_single_frame
-${catkin_LIBRARIES}
-super_frame_parser
-)
-
 target_link_libraries(parse_all_frames
 ${catkin_LIBRARIES}
 super_frame_parser
