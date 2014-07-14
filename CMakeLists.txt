@@ -118,10 +118,7 @@ include/superframe_parser/superframe_v2.h
 )
 
 ## Declare a cpp executable
-add_executable(parse_single_frame
-src/parse_single_frame.cpp
-include/superframe_parser/super_frame_parser.h
-)
+#add_executable(parse_single_frame src/parse_single_frame.cpp include/superframe_parser/super_frame_parser.h)
 
 add_executable(parse_all_frames
 src/parse_all_frames.cpp
@@ -138,10 +135,7 @@ ${catkin_LIBRARIES}
 ${PCL_LIBRARIES}
 )
 
-target_link_libraries(parse_single_frame
-${catkin_LIBRARIES}
-super_frame_parser
-)
+#target_link_libraries(parse_single_frame ${catkin_LIBRARIES} super_frame_parser)
 
 target_link_libraries(parse_all_frames
 ${catkin_LIBRARIES}
